@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="html, css, javascript, form, input, modal, alert svitlychnyi, serhii"
+    />
+    <meta
+      name="description"
+      content="Це сторынка відправки форми з даними та перевірки її полей на валідацію ."
+    />
+    <meta name="author" content="Світличний Сергій" />
+    <title>Free React Course</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Page Preloader -->
+    <div id="preloder" class="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <div class="wrapper">
+      <!--Header start-->
+      <header class="header">
+        <div class="container header__container">
+          <img
+            src="https://www.itera.com/hubfs/raw_assets/public/itera.no/themes/itera.no/images/logo.svg"
+            alt="Itera logo"
+            class="header__logo"
+          />
+
+          <a href="https://www.itera.com/" class="header__link"
+            >Free React Course</a
+          >
+        </div>
+      </header>
+      <!-- ./Header -->
+
+      <!-- Main start -->
+      <main class="page">
+        <div class="container main__container">
+          <form id="form" class="form" method="post" name="userEmail">
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+
+            <label for="password">Password:</label>
+            <input
+              id="password"
+              class="form__input"
+              type="password"
+              name="password"
+              placeholder="Your password"
+              required
+            />
+
+            <button class="form__btn btn" type="button">Submit</button>
+
+            <div class="modal">
+              <div class="modal__dialog">
+                <h5 class="modal__title"></h5>
+                <!-- /.modal__title -->
+                <div class="modal__buttons">
+                  <button class="modal__cancel btn" type="button">
+                    Cancel
+                  </button>
+                  <!-- /.modal__cancel -->
+                  <input
+                    class="modal__confirm btn"
+                    type="submit"
+                    value="Confirm"
+                  />
+                  <!-- /.modal__confirm -->
+                </div>
+              </div>
+              <!-- /.modal__dialog -->
+            </div>
+            <!-- /.modal -->
+          </form>
+          <!-- ./form -->
+
+          <div class="alert">
+            <h4 class="alert__title"></h4>
+            <!-- /.alert__title -->
+
+            <img
+              src="img/image.jpg"
+              width="300"
+              height="150"
+              alt="greeting"
+              class="alert__img"
+            />
+
+            <button class="alert__close-btn" type="button">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3" />
+                <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3" />
+              </svg>
+            </button>
+            <!-- /.modal__close-btn -->
+          </div>
+          <!-- /.alert -->
+        </div>
+        <!-- ./container -->
+      </main>
+      <!-- ./Main -->
+
+      <!-- Footer start -->
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__copyright">
+            &copy; Copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="material-icons">favorite</i> in
+            <address class="footer__address">
+              <a href="https://sergsvet87.github.io/My_RESUME/" target="_blank">
+                Ukraine, Kharkiv</a
+              >
+            </address>
+          </div>
+          <!-- ./footer-text -->
+        </div>
+      </footer>
+      <!-- ./Footer -->
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
